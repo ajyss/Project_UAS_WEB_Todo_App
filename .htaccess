@@ -1,0 +1,11 @@
+RewriteEngine On
+# Jika folder project Anda bernama 'todo_app', gunakan RewriteBase ini
+RewriteBase /todo_app/
+
+# Mengarahkan root akses langsung ke folder public
+RewriteRule ^$ public/index.php [L]
+
+# Mengarahkan semua request ke public/index.php dengan parameter 'url'
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php?url=$1 [L]
