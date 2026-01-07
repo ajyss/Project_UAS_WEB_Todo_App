@@ -1,5 +1,18 @@
 # TaskFlow - Aplikasi Manajemen Tugas Berbasis Web
 
+## UNIVERSITAS PELITA BANGSA
+
+## ULANGAN AKHIR SEMESTER
+## PEMROGRAMAN WEB
+
+**Nama**   : Muhammad Aziz Tri Ramadhan
+**NIM**    : 312410380
+**Kelas**  : TI.24.A3
+**Prodi**  : Teknik Informatika
+**Matakuliah** : Pemrograman Web
+**Nama Dosen** : Agung Nugroho, S.Kom., M.Kom
+
+
 ## Deskripsi Lengkap Project
 
 **TaskFlow** adalah aplikasi web manajemen tugas (Todo App) yang dikembangkan menggunakan arsitektur MVC (Model-View-Controller) dengan bahasa pemrograman PHP dan database MySQL. Aplikasi ini dirancang sebagai solusi komprehensif untuk membantu pengguna dalam mengorganisir, melacak, dan mengelola tugas-tugas sehari-hari dengan cara yang efisien, aman, dan user-friendly.
@@ -172,60 +185,53 @@ todo_app/
 ## Screenshot Aplikasi Lengkap Semua Proses
 
 ### 1. Halaman Landing/Login
-![Halaman Login](screenshots/01-login-page.png)
+![Halaman Login](screenshots/login.png)
 *Halaman login dengan form autentikasi dan link registrasi*
 
 ### 2. Halaman Registrasi
-![Halaman Registrasi](screenshots/02-register-page.png)
+![Halaman Registrasi](screenshots/register.png)
 *Form registrasi dengan validasi real-time*
 
 ### 3. Dashboard User
-![Dashboard User](screenshots/03-user-dashboard.png)
+![Dashboard User](screenshots/dashboarduser.png)
 *Dashboard utama menampilkan statistics dan quick actions*
 
 ### 4. Membuat Task Baru
-![Create Task](screenshots/04-create-task.png)
+![Create Task](screenshots/taskbaru.png)
 *Form pembuatan task dengan semua field yang diperlukan*
 
 ### 5. List Tasks
-![Task List](screenshots/05-task-list.png)
+![Task List](screenshots/listtask.png)
 *Tampilan list tasks dengan pagination dan sorting*
 
 ### 6. Edit Task
-![Edit Task](screenshots/06-edit-task.png)
+![Edit Task](screenshots/edittask.png)
 *Modal form untuk mengedit task yang ada*
 
 ### 7. Filter dan Search
-![Filter Search](screenshots/07-filter-search.png)
+![Filter Search](screenshots/filter&search.png)
 *Fitur pencarian dan filter untuk menemukan tasks*
 
 ### 8. Task Detail View
-![Task Detail](screenshots/08-task-detail.png)
+![Task Detail](screenshots/detailtask.png)
 *Tampilan detail task dengan informasi lengkap*
 
 ### 9. Admin Dashboard
-![Admin Dashboard](screenshots/09-admin-dashboard.png)
+![Admin Dashboard](screenshots/dashboardadmin.png)
 *Dashboard admin dengan statistics pengguna*
 
 ### 10. User Management (Admin)
-![User Management](screenshots/10-user-management.png)
+![User Management](screenshots/kelolauser.png)
 *Panel admin untuk mengelola pengguna sistem*
 
 ### 11. Delete Confirmation
-![Delete Confirmation](screenshots/11-delete-confirmation.png)
+![Delete Confirmation](screenshots/delete.png)
 *Modal konfirmasi sebelum menghapus task*
 
 ### 12. Responsive Mobile View
 ![Mobile View](screenshots/12-mobile-responsive.png)
 *Tampilan aplikasi di device mobile*
 
-### 13. Error Handling
-![Error Page](screenshots/13-error-handling.png)
-*Halaman error dengan pesan yang informatif*
-
-### 14. Success Messages
-![Success Message](screenshots/14-success-message.png)
-*Notifikasi sukses setelah operasi berhasil*
 
 ---
 
@@ -450,13 +456,6 @@ Proyek ini dibuat untuk tujuan pendidikan dan akademik. Tidak untuk penggunaan k
 
 ---
 
-## Kontak
-
-**Nama**: [Nama Lengkap Anda]
-**NIM**: [NIM Anda]
-**Email**: [Email Anda]
-**Mata Kuliah**: Pemrograman Web
-**Dosen**: [Nama Dosen]
 
 ---
 
