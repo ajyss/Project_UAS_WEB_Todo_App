@@ -361,7 +361,7 @@ body {
         </div>
     <?php endif; ?>
     
-    <?php if ($_SESSION['user']['role'] === 'admin'): ?>
+    <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin'): ?>
         <a href="<?= BASE_URL ?>/user" class="text-warning me-3">Kelola User</a>
     <?php endif; ?>
 

@@ -50,7 +50,7 @@ class Router
             }
         }
 
-        $controllerFile = "../app/controllers/$controllerName.php";
+        $controllerFile = "app/controllers/$controllerName.php";
 
         if (!file_exists($controllerFile)) {
             header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');

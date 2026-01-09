@@ -24,10 +24,3 @@ RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
     Order allow,deny
     Deny from all
 </Files>
-
-# Block access to sensitive directories
-<IfModule mod_authz_core.c>
-    <DirectoryMatch "^(app|database|tests)/">
-        Require all denied
-    </DirectoryMatch>
-</IfModule>
