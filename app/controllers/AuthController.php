@@ -22,7 +22,7 @@ class AuthController extends Controller
             exit;
         }
 
-        require "../app/views/auth/login.php";
+        $this->view('auth/login');
     }
 
     public function login()
