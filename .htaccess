@@ -1,11 +1,33 @@
 RewriteEngine On
-# Jika folder project Anda bernama 'todo_app', gunakan RewriteBase ini
-RewriteBase /todo_app/
 
-# Mengarahkan root akses langsung ke folder public
-RewriteRule ^$ public/index.php [L]
-
-# Mengarahkan semua request ke public/index.php dengan parameter 'url'
+# Redirect all requests to index.php if the requested file doesn't exist
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ public/index.php?url=$1 [L]
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Hide .htaccess file
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Protect config files
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Block access to sensitive directories
+<IfModule mod_authz_core.c>
+    <DirectoryMatch "^(app|database|tests)/">
+        Require all denied
+    </DirectoryMatch>
+</IfModule>
